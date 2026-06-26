@@ -3,624 +3,349 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- 🔄 ALTERAR: título da página -->
-<title>Objetos Falantes para Pintores – Maior Pacote de 2026</title>
-
-<!-- 🔄 ALTERAR: Pixel do Facebook -->
+<title>Objetos Falantes para Lava Rápidos – Maior Pacote de 2026</title>
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','975531151726344');
-fbq('track','PageView');
+fbq('init','1281663394132406');fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=975531151726344&ev=PageView&noscript=1"/></noscript>
-<!-- FIM Pixel -->
-
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1281663394132406&ev=PageView&noscript=1"/></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<!-- UTMify — FIXO -->
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
-
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --azul:#0A1628;--azul-medio:#0F1E36;--azul-card:#142038;--azul-borda:#1E3A5F;
+  --amarelo:#FACC15;--amarelo-hover:#EAB308;
+  --preto:#050D1A;--cinza-texto:#94A3B8;--cinza-fundo:#0D1829;
+  --branco:#FFFFFF;--verde:#16A34A;--verde-claro:#DCFCE7;
+  --vermelho:#EF4444;--borda:#1E3A5F;
+  --texto-claro:#E2E8F0;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--azul);color:var(--texto-claro);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;line-height:1.15}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:860px;margin:0 auto;padding:0 20px}
 
-:root {
-  --laranja: #F97316;
-  --amarelo: #FDE047;
-  --preto: #0A0A0A;
-  --cinza-escuro: #111111;
-  --cinza-medio: #1E1E1E;
-  --cinza-card: #242424;
-  --branco: #FFFFFF;
-  --verde: #16A34A;
-  --verde-claro: #DCFCE7;
-  --texto-muted: #9CA3AF;
-  --borda: #2E2E2E;
-}
+/* URGÊNCIA */
+.urgencia{background:var(--amarelo);padding:12px 20px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(12px,2.5vw,14px);position:sticky;top:0;z-index:100;color:var(--azul)}
+.urgencia .data-destaque{background:var(--azul);color:var(--amarelo);padding:2px 10px;border-radius:4px;display:inline-block;margin:0 4px;font-weight:800}
 
-html { scroll-behavior: smooth; }
+/* HERO */
+.hero{padding:56px 20px 0;text-align:center;background:var(--azul);border-bottom:1px solid var(--borda)}
+.nicho-badge{display:inline-block;background:var(--amarelo);color:var(--azul);font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 18px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(26px,5vw,46px);font-weight:900;max-width:720px;margin:0 auto 16px;color:var(--branco)}
+.hero h1 .destaque{color:var(--amarelo)}
+.hero .subtitulo{font-size:clamp(14px,2vw,17px);color:var(--cinza-texto);max-width:580px;margin:0 auto 32px}
+.hero-banner{width:100%;max-width:608px;margin:0 auto}
+.hero-banner img{width:100%;border-radius:12px 12px 0 0;border:1px solid var(--borda);border-bottom:none;display:block}
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--preto);
-  color: var(--branco);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+/* PREÇO CTA */
+.preco-cta-faixa{background:var(--azul-medio);border:1px solid var(--borda);border-top:none;border-radius:0 0 12px 12px;padding:28px 24px 36px;text-align:center;max-width:608px;margin:0 auto}
+.preco-linha-de{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;color:var(--texto-claro);margin-bottom:4px}
+.preco-linha-de span{text-decoration:line-through;color:var(--vermelho);font-size:18px}
+.preco-linha-por{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:8px}
+.preco-label{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(14px,2vw,17px);color:var(--cinza-texto)}
+.preco-valor{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(52px,10vw,80px);color:var(--amarelo);line-height:1}
+.preco-valor sup{font-size:28px;vertical-align:super}
+.garantia-pill{display:inline-block;font-size:12px;background:var(--verde-claro);color:#166534;padding:4px 14px;border-radius:999px;font-weight:600;margin-bottom:20px}
 
-h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
-img { max-width: 100%; height: auto; display: block; }
-a { text-decoration: none; color: inherit; }
+/* BOTÕES */
+.btn-cta{display:inline-block;background:var(--amarelo);color:var(--azul);font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(13px,2vw,16px);padding:18px 36px;border-radius:8px;letter-spacing:0.4px;transition:background 0.15s,transform 0.15s;cursor:pointer;border:none;text-align:center;width:100%;max-width:480px}
+.btn-cta:hover{background:var(--amarelo-hover);transform:translateY(-2px)}
+.btn-cta.escuro{background:var(--azul-medio);color:var(--amarelo);border:2px solid var(--amarelo)}
+.btn-cta.escuro:hover{background:var(--azul-card)}
+.btn-cta.verde{background:var(--verde);color:var(--branco)}
+.btn-cta.verde:hover{background:#15803D}
 
-.container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+/* CONTADOR */
+.contador{background:var(--amarelo);padding:48px 20px;border-top:none;border-bottom:4px solid var(--azul-medio)}
+.contador-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:700px;margin:0 auto}
+@media(max-width:540px){.contador-grid{grid-template-columns:1fr;gap:16px}}
+.contador-item{text-align:center;padding:28px 16px;background:rgba(10,22,40,0.12);border:1px solid rgba(10,22,40,0.2);border-radius:14px}
+.contador-numero{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(36px,7vw,56px);color:var(--azul);line-height:1;margin-bottom:8px}
+.contador-descricao{font-size:clamp(13px,2vw,15px);color:var(--azul);font-weight:600;line-height:1.4}
 
-/* ── URGÊNCIA ── */
-.urgencia {
-  background: var(--laranja);
-  padding: 12px 20px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: clamp(12px, 2.5vw, 14px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  color: var(--preto);
-}
-.urgencia .data-destaque {
-  background: var(--preto);
-  color: var(--amarelo);
-  padding: 2px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 4px;
-}
+/* SEÇÕES */
+.secao{padding:64px 20px;border-top:1px solid var(--borda)}
+.secao.bg-escuro{background:var(--azul)}
+.secao.bg-card{background:var(--azul-medio)}
+.secao.bg-amarelo{background:var(--amarelo)}
+.secao-titulo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(21px,4vw,32px);text-align:center;margin-bottom:8px;color:var(--branco)}
+.secao-titulo .destaque{color:var(--amarelo)}
+.secao-sub{text-align:center;color:var(--cinza-texto);font-size:clamp(13px,2vw,15px);margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto}
 
-/* ── HERO ── */
-.hero {
-  padding: 60px 20px 48px;
-  text-align: center;
-  background: var(--cinza-escuro);
-  border-bottom: 1px solid var(--borda);
-}
-.nicho-badge {
-  display: inline-block;
-  background: var(--laranja);
-  color: var(--preto);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 5px 18px;
-  border-radius: 999px;
-  margin-bottom: 20px;
-}
-.hero h1 {
-  font-size: clamp(26px, 5vw, 46px);
-  font-weight: 900;
-  max-width: 720px;
-  margin: 0 auto 16px;
-}
-.hero h1 .destaque { color: var(--laranja); }
-.hero .subtitulo {
-  font-size: clamp(14px, 2vw, 17px);
-  color: #D1D5DB;
-  max-width: 580px;
-  margin: 0 auto 32px;
-}
-.preco-bloco {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 32px;
-}
-.preco-bloco .de { font-size: 14px; color: var(--texto-muted); text-decoration: line-through; }
-.preco-bloco .por {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 58px;
-  color: var(--amarelo);
-  line-height: 1;
-}
-.preco-bloco .por sup { font-size: 22px; vertical-align: super; }
-.preco-bloco .garantia-pill {
-  font-size: 12px;
-  background: var(--verde-claro);
-  color: #166534;
-  padding: 4px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-}
+/* BANNER 2 */
+.banner-wrap img{width:100%;border-radius:12px;border:1px solid var(--borda)}
 
-/* ── BOTÕES ── */
-.btn-cta {
-  display: inline-block;
-  background: var(--laranja);
-  color: var(--preto);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: clamp(13px, 2vw, 16px);
-  padding: 18px 36px;
-  border-radius: 8px;
-  letter-spacing: 0.4px;
-  transition: background 0.15s, transform 0.15s;
-  cursor: pointer;
-  border: none;
-  text-align: center;
-  width: 100%;
-  max-width: 480px;
-}
-.btn-cta:hover { background: #EA6100; transform: translateY(-2px); }
-.btn-cta.verde { background: var(--verde); color: var(--branco); }
-.btn-cta.verde:hover { background: #15803D; }
+/* LISTA ITENS */
+.lista-itens{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;list-style:none}
+.lista-itens li{display:flex;align-items:flex-start;gap:12px;background:var(--azul-card);border:1px solid var(--borda);border-radius:10px;padding:14px 16px;font-size:14px;line-height:1.5;transition:border-color 0.2s,box-shadow 0.2s;color:var(--texto-claro)}
+.lista-itens li:hover{border-color:var(--amarelo);box-shadow:0 2px 12px rgba(250,204,21,0.1)}
+.check-icon{flex-shrink:0;width:20px;height:20px;background:var(--amarelo);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.check-icon svg{width:10px;height:10px}
 
-/* ── SEÇÕES ── */
-.secao { padding: 64px 20px; border-top: 1px solid var(--borda); }
-.secao.bg-escuro { background: var(--cinza-escuro); }
-.secao.bg-card   { background: var(--cinza-medio); }
+/* VÍDEOS */
+.phone-video-section{background:transparent;padding:0;overflow:hidden}
+.phone-video-grid{max-width:720px;margin:0 auto;display:grid;gap:14px;grid-template-columns:repeat(3,1fr);justify-items:center}
+.phone-card{width:min(200px,100%);display:grid;place-items:center}
+.phone-frame{position:relative;width:100%;aspect-ratio:9/16;border-radius:32px;background:#000;border:4px solid var(--borda);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.phone-frame::before{content:"";position:absolute;inset:6px;border-radius:26px;border:2px solid rgba(255,255,255,.12);z-index:2;pointer-events:none}
+.phone-notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:40%;height:16px;background:rgba(0,0,0,.75);border-radius:0 0 12px 12px;z-index:4}
+.video-host{position:absolute;inset:0;z-index:1;overflow:hidden}
+.video-host iframe{width:100%;height:100%;border:none}
+@media(max-width:640px){
+  .phone-video-grid{grid-template-columns:1fr;gap:18px}
+  .phone-card{width:min(240px,85vw)}
+  .video-host iframe{pointer-events:none}
+  .tap-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100px;height:100px;border-radius:50%;z-index:5;cursor:pointer}
+}
+@media(min-width:641px){.tap-center{display:none}}
 
-.secao-titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: clamp(21px, 4vw, 32px);
-  text-align: center;
-  margin-bottom: 8px;
-}
-.secao-titulo .destaque { color: var(--laranja); }
-.secao-sub {
-  text-align: center;
-  color: var(--texto-muted);
-  font-size: clamp(13px, 2vw, 15px);
-  margin-bottom: 40px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* MAPA */
+.mapa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:32px}
+.mapa-card{background:var(--azul-card);border:1px solid var(--borda);border-radius:12px;padding:28px 18px;text-align:center;transition:border-color 0.2s}
+.mapa-card:hover{border-color:var(--amarelo)}
+.mapa-card .mapa-icon{width:160px;height:160px;margin:0 auto 16px}
+.mapa-card .mapa-icon img{width:100%;height:100%;object-fit:contain}
+.mapa-card .letra{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--amarelo);margin-bottom:6px}
+.mapa-card h3{font-size:13px;font-weight:700;margin-bottom:6px;color:var(--branco)}
+.mapa-card p{font-size:12px;color:var(--cinza-texto);line-height:1.5}
 
-/* ── BANNER ── */
-.banner-wrap img { width: 100%; border-radius: 12px; border: 1px solid var(--borda); }
+/* VANTAGENS */
+.vantagens-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:640px){.vantagens-grid{grid-template-columns:1fr}}
+.vantagens-lista{list-style:none;display:flex;flex-direction:column;gap:14px}
+.vantagens-lista li{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--texto-claro)}
+.v-check{flex-shrink:0;width:22px;height:22px;background:var(--amarelo);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.v-check svg{width:11px;height:11px}
 
-/* ── LISTA DE ITENS ── */
-.lista-itens {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 12px;
-  list-style: none;
-}
-.lista-itens li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: var(--cinza-card);
-  border: 1px solid var(--borda);
-  border-radius: 10px;
-  padding: 14px 16px;
-  font-size: 14px;
-  line-height: 1.5;
-  transition: border-color 0.2s;
-}
-.lista-itens li:hover { border-color: var(--laranja); }
-.check-icon {
-  flex-shrink: 0;
-  width: 20px; height: 20px;
-  background: var(--verde);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 1px;
-}
-.check-icon svg { width: 10px; height: 10px; }
+/* BÔNUS */
+.bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:540px){.bonus-grid{grid-template-columns:1fr;gap:16px}}
+.bonus-grid img{border-radius:10px;border:1px solid var(--borda);width:100%;transition:transform 0.2s,border-color 0.2s}
+.bonus-grid img:hover{transform:scale(1.03);border-color:var(--amarelo)}
 
-/* ── VÍDEOS ── */
-.phone-video-section {
-  background: #ffffff;
-  padding: 40px 10px;
-  border-radius: 18px;
-  overflow: hidden;
+/* DEPOIMENTOS */
+.depo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:40px}
+@media(max-width:640px){
+  .depo-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding-bottom:12px;margin-bottom:32px;grid-template-columns:unset}
+  .depo-grid img{flex:0 0 75vw;width:75vw;scroll-snap-align:center;border-radius:10px}
 }
-.phone-video-grid {
-  max-width: 720px;
-  margin: 0 auto;
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-.phone-card { width: min(200px, 100%); display: grid; place-items: center; }
-.phone-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 9/16;
-  border-radius: 32px;
-  background: #000;
-  border: 4px solid #e9e9e9;
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0,0,0,.18);
-}
-.phone-frame::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border-radius: 26px;
-  border: 2px solid rgba(255,255,255,.12);
-  z-index: 2;
-  pointer-events: none;
-}
-.phone-notch {
-  position: absolute;
-  top: 6px; left: 50%;
-  transform: translateX(-50%);
-  width: 40%; height: 16px;
-  background: rgba(0,0,0,.75);
-  border-radius: 0 0 12px 12px;
-  z-index: 4;
-}
-.video-host { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
-.video-host iframe { width: 100%; height: 100%; border: none; }
-@media(max-width:640px) {
-  .phone-video-grid { grid-template-columns: 1fr; gap: 18px; }
-  .phone-card { width: min(240px, 85vw); }
-  .video-host iframe { pointer-events: none; }
-  .tap-center {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px; height: 100px;
-    border-radius: 50%;
-    z-index: 5; cursor: pointer;
-  }
-}
-@media(min-width:641px) { .tap-center { display: none; } }
+.depo-grid img{border-radius:10px;border:1px solid var(--borda);width:100%}
 
-/* ── MÉTODO MAPA ── */
-.mapa-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  margin-top: 32px;
-}
-.mapa-card {
-  background: var(--cinza-card);
-  border: 1px solid var(--borda);
-  border-radius: 12px;
-  padding: 24px 18px;
-  text-align: center;
-  transition: border-color 0.2s;
-}
-.mapa-card:hover { border-color: var(--laranja); }
-.mapa-card .letra {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 44px; font-weight: 900;
-  color: var(--laranja); line-height: 1; margin-bottom: 8px;
-}
-.mapa-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-.mapa-card p  { font-size: 13px; color: var(--texto-muted); line-height: 1.5; }
+/* COMO FUNCIONA */
+.como-funciona-img{width:100%;max-width:572px;margin:0 auto;border-radius:12px;border:1px solid var(--borda)}
+@media(max-width:640px){.como-funciona-img{max-width:100%}}
 
-/* ── VANTAGENS ── */
-.vantagens-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-@media(max-width:640px) { .vantagens-grid { grid-template-columns: 1fr; } }
-.vantagens-lista { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-.vantagens-lista li { display: flex; align-items: center; gap: 12px; font-size: 15px; color: #E5E7EB; }
-.v-check {
-  flex-shrink: 0; width: 22px; height: 22px;
-  background: var(--laranja); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-}
-.v-check svg { width: 11px; height: 11px; }
+/* PLANOS */
+.alerta-promo{background:var(--azul-card);border:2px solid var(--amarelo);border-radius:10px;padding:16px 24px;text-align:center;margin-bottom:36px}
+.alerta-promo p{font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(13px,2vw,15px);color:var(--amarelo)}
+.planos-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:620px){.planos-grid{grid-template-columns:1fr}}
+.plano{background:var(--azul-card);border:1px solid var(--borda);border-radius:14px;padding:32px 24px;display:flex;flex-direction:column;gap:20px;position:relative;text-align:center}
+.plano.destaque{border:2px solid var(--amarelo);box-shadow:0 4px 24px rgba(250,204,21,0.15)}
+.plano-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--amarelo);color:var(--azul);font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:4px 18px;border-radius:999px;white-space:nowrap}
+.plano-header h3{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--cinza-texto);margin-bottom:16px}
+.plano-preco-box{background:var(--azul-medio);border:1px solid var(--borda);border-radius:10px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.plano-de{font-size:13px;color:var(--cinza-texto);text-decoration:line-through}
+.plano-valor{font-family:'Montserrat',sans-serif;font-weight:900;font-size:48px;color:var(--amarelo);line-height:1}
+.plano-tipo{font-size:12px;color:var(--cinza-texto);margin-top:2px}
+.plano ul{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1;text-align:left}
+.plano ul li{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--texto-claro);line-height:1.4}
+.p-check{flex-shrink:0;width:18px;height:18px;background:var(--verde);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.p-check svg{width:9px;height:9px}
+.plano ul li.bonus-item{color:var(--amarelo);font-weight:600}
+.plano ul li.bonus-item .p-check{background:var(--amarelo)}
+.plano ul li.bonus-item .p-check svg path{stroke:var(--azul)}
+.plano-rodape{font-size:11px;color:var(--cinza-texto);text-align:center}
+.super-oferta-wrap{text-align:center;margin-bottom:16px}
+.super-oferta-wrap img{max-width:280px;margin:0 auto}
 
-/* ── BÔNUS ── */
-.bonus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-@media(max-width:540px) { .bonus-grid { grid-template-columns: repeat(2, 1fr); } }
-.bonus-grid img {
-  border-radius: 10px; border: 1px solid var(--borda); width: 100%;
-  transition: transform 0.2s, border-color 0.2s;
-}
-.bonus-grid img:hover { transform: scale(1.03); border-color: var(--laranja); }
+/* FAQ */
+.faq-lista{display:flex;flex-direction:column;gap:12px;max-width:720px;margin:0 auto}
+.faq-item{background:var(--azul-card);border:1px solid var(--borda);border-radius:12px;overflow:hidden;transition:border-color 0.2s}
+.faq-item:hover{border-color:var(--amarelo)}
+.faq-pergunta{width:100%;background:none;border:none;cursor:pointer;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(13px,2vw,15px);color:var(--branco);text-align:left;gap:12px}
+.faq-icone{flex-shrink:0;width:28px;height:28px;background:rgba(250,204,21,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--amarelo);transition:transform 0.25s;font-weight:900;line-height:1}
+.faq-resposta{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.35s;font-size:14px;color:var(--cinza-texto);line-height:1.7;padding:0 20px}
+.faq-item.aberto .faq-resposta{max-height:300px;padding:0 20px 18px}
+.faq-item.aberto .faq-icone{transform:rotate(45deg)}
 
-/* ── DEPOIMENTOS ── */
-.depo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 40px; }
-@media(max-width:540px) { .depo-grid { grid-template-columns: 1fr; } }
-.depo-grid img { border-radius: 10px; border: 1px solid var(--borda); width: 100%; }
+/* ENTREGA */
+.entrega-box{display:flex;gap:36px;align-items:center;background:var(--azul-card);border:1px solid var(--borda);border-radius:14px;padding:42px 48px;max-width:640px;margin:0 auto}
+@media(max-width:540px){.entrega-box{flex-direction:column;text-align:center;padding:32px 24px;gap:24px}}
+.entrega-icones{display:flex;gap:16px;flex-shrink:0}
+.entrega-icone{width:72px;height:72px;background:var(--amarelo);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:34px}
+.entrega-box h3{font-size:24px;font-weight:700;margin-bottom:10px;color:var(--amarelo)}
+.entrega-box p{font-size:16px;color:var(--cinza-texto);line-height:1.7}
 
-/* ── COMO FUNCIONA ── */
-.como-funciona-img { width: 100%; max-width: 520px; margin: 0 auto; border-radius: 12px; border: 1px solid var(--borda); }
+/* GARANTIA */
+.garantia-box{background:var(--azul-card);border:2px solid var(--borda);border-radius:14px;padding:40px 28px;text-align:center;max-width:540px;margin:0 auto;box-shadow:0 4px 20px rgba(250,204,21,0.08)}
+.garantia-box img{max-width:140px;margin:0 auto 20px}
+.garantia-box h3{font-size:22px;font-weight:900;color:var(--amarelo);margin-bottom:12px}
+.garantia-box p{font-size:15px;color:var(--cinza-texto);line-height:1.7;max-width:420px;margin:0 auto}
 
-/* ── ÍCONES ── */
-.icones-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 32px; }
-@media(max-width:480px) { .icones-grid { grid-template-columns: repeat(2, 1fr); } }
-.icones-grid img { border-radius: 12px; width: 100%; }
+/* RODAPÉ */
+footer{border-top:1px solid var(--borda);padding:24px 20px;text-align:center;color:var(--cinza-texto);font-size:13px;background:var(--preto)}
+footer a{color:var(--amarelo);text-decoration:underline}
 
-/* ── PLANOS ── */
-.alerta-promo {
-  background: #111; border: 1px solid var(--laranja);
-  border-radius: 10px; padding: 16px 24px; text-align: center; margin-bottom: 36px;
-}
-.alerta-promo p {
-  font-family: 'Montserrat', sans-serif; font-weight: 700;
-  font-size: clamp(13px, 2vw, 15px); color: var(--amarelo);
-}
-.planos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-@media(max-width:620px) { .planos-grid { grid-template-columns: 1fr; } }
-.plano {
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 28px 22px;
-  display: flex; flex-direction: column; gap: 18px; position: relative;
-}
-.plano.destaque { border: 2px solid var(--laranja); }
-.plano-badge {
-  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
-  background: var(--laranja); color: var(--preto);
-  font-family: 'Montserrat', sans-serif; font-weight: 800;
-  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
-  padding: 4px 18px; border-radius: 999px; white-space: nowrap;
-}
-.plano-header h3 {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.8px; color: var(--texto-muted); margin-bottom: 10px;
-}
-.plano-de { font-size: 13px; color: var(--texto-muted); text-decoration: line-through; }
-.plano-valor { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 44px; color: var(--amarelo); line-height: 1; }
-.plano-tipo { font-size: 12px; color: var(--texto-muted); margin-top: 4px; }
-.plano ul { list-style: none; display: flex; flex-direction: column; gap: 10px; flex: 1; }
-.plano ul li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #D1D5DB; line-height: 1.4; }
-.p-check {
-  flex-shrink: 0; width: 16px; height: 16px;
-  background: var(--verde); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center; margin-top: 1px;
-}
-.p-check svg { width: 8px; height: 8px; }
-.plano ul li.bonus-item { color: var(--amarelo); font-weight: 600; }
-.plano ul li.bonus-item .p-check { background: var(--laranja); }
-.plano-rodape { font-size: 11px; color: #6B7280; text-align: center; }
-.super-oferta-wrap { text-align: center; margin-bottom: 8px; }
-.super-oferta-wrap img { max-width: 120px; margin: 0 auto; }
+/* CTA FIXO removido */
+.cta-fixo{display:none}
 
-/* ── GARANTIA ── */
-.garantia-box {
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 40px 28px; text-align: center;
-  max-width: 540px; margin: 0 auto;
-}
-.garantia-box img { max-width: 140px; margin: 0 auto 20px; }
-.garantia-box h3 { font-size: 22px; font-weight: 900; color: var(--verde); margin-bottom: 12px; }
-.garantia-box p { font-size: 15px; color: var(--texto-muted); line-height: 1.7; max-width: 420px; margin: 0 auto; }
+/* UTILITÁRIOS */
+.text-center{text-align:center}
+.mt-32{margin-top:32px}
+.mt-24{margin-top:24px}
 
-/* ── ENTREGA ── */
-.entrega-box {
-  display: flex; gap: 24px; align-items: center;
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 28px 30px; max-width: 540px; margin: 0 auto;
+@media(max-width:640px){
+  .secao{padding:48px 16px}
+  .hero{padding:44px 16px 0}
+  .mapa-card h3{font-size:15.6px}
+  .mapa-card p{font-size:14.4px}
+  .mapa-card .letra{font-size:24px}
+  .como-funciona-img{max-width:100%;border-radius:8px}
+  .bonus-grid{grid-template-columns:1fr;gap:16px}
+  .bonus-grid img{width:100%}
 }
-@media(max-width:480px) { .entrega-box { flex-direction: column; text-align: center; } }
-.entrega-icones { display: flex; gap: 10px; flex-shrink: 0; }
-.entrega-icone {
-  width: 50px; height: 50px; background: var(--laranja);
-  border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;
-}
-.entrega-box h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-.entrega-box p  { font-size: 14px; color: var(--texto-muted); line-height: 1.6; }
-
-/* ── RODAPÉ ── */
-footer { border-top: 1px solid var(--borda); padding: 24px 20px; text-align: center; color: #4B5563; font-size: 13px; }
-footer a { color: #6B7280; text-decoration: underline; }
-
-/* ── CTA FIXO MOBILE ── */
-.cta-fixo {
-  display: none; position: fixed; bottom: 0; left: 0; right: 0;
-  padding: 10px 14px; background: rgba(10,10,10,0.96);
-  border-top: 1px solid var(--borda); z-index: 99;
-}
-@media(max-width:640px) { .cta-fixo { display: block; } }
-
-/* ── UTILITÁRIOS ── */
-.text-center { text-align: center; }
-.mt-32 { margin-top: 32px; }
-@media(max-width:640px) { .secao { padding: 48px 16px; } .hero { padding: 44px 16px 36px; } }
 </style>
 </head>
 <body>
 
-<!-- ════════════════════════════════════
-     URGÊNCIA — FIXO
-════════════════════════════════════ -->
+<!-- URGÊNCIA -->
 <div class="urgencia">
   🔥 Promoção encerra hoje —
   <span class="data-destaque" id="data-hoje"></span>
   Garanta agora antes que o preço volte!
 </div>
 <script>
-  const _d = new Date();
-  const _m = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
-  document.getElementById('data-hoje').textContent = _d.getDate() + '/' + _m[_d.getMonth()];
+const _d=new Date();
+const _m=["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+document.getElementById('data-hoje').textContent=_d.getDate()+'/'+_m[_d.getMonth()];
 </script>
 
-
-<!-- ════════════════════════════════════
-     HERO
-     🔄 ALTERAR: nicho-badge / h1 / subtitulo
-════════════════════════════════════ -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
-
-    <!-- 🔄 ALTERAR: nome do nicho -->
-    <span class="nicho-badge">Para Pintores</span>
-
-    <!-- 🔄 ALTERAR: headline principal -->
-    <h1>+150 Mídias Prontas Para <span class="destaque">Pintores Dominarem</span> as Redes Sociais em 2026</h1>
-
-    <!-- 🔄 ALTERAR: descrição -->
-    <p class="subtitulo">Objetos falantes que estão bombando no Instagram, TikTok e WhatsApp — prontos para você baixar e postar hoje mesmo. Sem criar nada do zero.</p>
-
-    <div class="preco-bloco">
-      <span class="de">De R$67,00</span>
-      <span class="por"><sup>R$</sup>10</span>
-      <span class="garantia-pill">✓ Garantia de 7 dias</span>
+    <span class="nicho-badge">Para Lava Rápidos</span>
+    <h1>+150 Mídias Prontas Para <span class="destaque">Lava Rápidos Dominarem e Viralizarem</span> as Redes Sociais em 2026</h1>
+    <p class="subtitulo">Objetos falantes prontos para você postar hoje no Instagram, TikTok e WhatsApp. Sem criar nada do zero. Tudo pronto — só baixar e postar.</p>
+    <div class="hero-banner">
+      <img src="banner_1.webp" alt="Kit de mídias para Lava Rápidos" loading="lazy">
     </div>
-
-    <a href="#planos" class="btn-cta">👉 QUERO ATRAIR MAIS CLIENTES AGORA</a>
+  </div>
+  <div class="preco-cta-faixa">
+    <p class="preco-linha-de">De <span>R$67,00</span></p>
+    <div class="preco-linha-por">
+      <span class="preco-label">Por apenas</span>
+      <span class="preco-valor"><sup>R$</sup>10</span>
+    </div>
+    <span class="garantia-pill">✓ Garantia de 7 dias</span><br>
+    <a href="upsell.html" class="btn-cta">👉 QUERO ATRAIR MAIS CLIENTES AGORA</a>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     BANNER 1
-     🔄 ALTERAR: src da imagem
-════════════════════════════════════ -->
-<section class="secao bg-escuro" style="padding-top:48px;padding-bottom:48px;">
-  <div class="container">
-    <div class="banner-wrap">
-      <!-- 🔄 ALTERAR: banner 1 do segmento -->
-      <img src="banner1_pintor.webp" alt="Kit de mídias para pintores" loading="lazy">
+<!-- CONTADOR -->
+<div class="contador">
+  <div class="contador-grid">
+    <div class="contador-item">
+      <div class="contador-numero">+150</div>
+      <div class="contador-descricao">Mídias prontas no pacote</div>
+    </div>
+    <div class="contador-item">
+      <div class="contador-numero">10x</div>
+      <div class="contador-descricao">Mais vendas nas redes sociais</div>
+    </div>
+    <div class="contador-item">
+      <div class="contador-numero">+6</div>
+      <div class="contador-descricao">Bônus exclusivos grátis</div>
     </div>
   </div>
-</section>
+</div>
 
-
-<!-- ════════════════════════════════════
-     O QUE VOCÊ RECEBE
-     🔄 ALTERAR: lista de objetos falantes
-════════════════════════════════════ -->
+<!-- O QUE VOCÊ RECEBE -->
 <section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo">O Que Você <span class="destaque">Recebe</span></h2>
-    <!-- 🔄 ALTERAR: subtítulo do nicho -->
-    <p class="secao-sub">Tudo criado para educar o cliente e gerar interesse no seu serviço de pintura</p>
-
-    <!-- 🔄 ALTERAR: lista dos objetos falantes do segmento -->
+    <p class="secao-sub">Tudo criado para educar o cliente e gerar interesse no seu lava rápido todos os dias</p>
     <ul class="lista-itens">
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎥 +90 Vídeos de Objetos Falantes para Pintores</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+120 Posts editáveis para usar hoje</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+6 Bônus totalmente grátis</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🖌️ Rolo de pintura falando sobre tipos de tinta</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🪣 Balde explicando como preparar a parede</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>📏 Trena sobre a importância de medir tudo antes</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🔧 Espátula alertando sobre cuidados no acabamento</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🧻 Lixa falando sobre lixamento entre demãos</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎨 Tinta explicando como escolher para cada ambiente</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>📄 Plástico protetor ensinando a proteger móveis e pisos</li>
-      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>👩‍⚕️ Vídeos educativos para atrair mais clientes</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎥 +100 Vídeos de Objetos Falantes para Lava Rápidos</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+60 Posts editáveis para usar hoje</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+6 Bônus totalmente grátis</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🚗 Carro sujo reclamando que está cheio de poeira e precisa de um banho urgente</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🧽 Esponja dizendo que nasceu para tirar sujeira pesada sem riscar a pintura</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🪣 Balde explicando a importância de lavar o carro com os produtos certos</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>💦 Mangueira falando que pressão demais pode estragar detalhes do veículo</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🚿 Lavadora de alta pressão se achando a estrela do lava rápido</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🫧 Shampoo automotivo explicando por que detergente comum não é indicado</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🧴 Pretinho de pneu falando que deixa o carro com cara de novo</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🛞 Pneu sujo pedindo um trato porque está apagando a beleza do carro</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🧼 Pano de microfibra explicando que evita riscos e dá acabamento profissional</li>
+      <li><span class="check-icon"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>✨ Cera automotiva dizendo que protege a pintura e dá brilho de vitrine</li>
     </ul>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     VÍDEOS DE DEMONSTRAÇÃO
-     🔄 ALTERAR: os 3 src dos iframes
-════════════════════════════════════ -->
+<!-- VÍDEOS -->
 <section class="secao bg-escuro">
   <div class="container">
     <h2 class="secao-titulo">Veja Alguns <span class="destaque">Modelos</span></h2>
     <p class="secao-sub">Exemplos reais do que você vai receber para postar</p>
+    <section class="phone-video-section"><div class="phone-video-grid">
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/5a5eb921-4c91-484b-9f55-3fc5fba95c87" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/7f185b4c-fc88-4130-a1a4-36262394ed4e" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/f6302e6f-ff67-4104-acba-2e9020afb517" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    </div></section>
   </div>
-
-  <section class="phone-video-section">
-  <div class="phone-video-grid">
-
-  <!-- 🔄 ALTERAR: Video demonstração 1 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/4ab8ad34-e9b6-486e-990a-713490c6ce86" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
-
-  <!-- 🔄 ALTERAR: Video demonstração 2 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/0ac07c56-3b21-4657-9ce5-87de7b062c22" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
-
-  <!-- 🔄 ALTERAR: Video demonstração 3 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/20397beb-80d7-4920-b419-6df81b91dc13" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
-
-  </div>
-  </section>
 </section>
 
-
-<!-- ════════════════════════════════════
-     MÉTODO M.A.P.A. — FIXO
-════════════════════════════════════ -->
+<!-- MÉTODO MAPA -->
 <section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo">Por Que o Método <span class="destaque">M.A.P.A.</span> Funciona?</h2>
     <p class="secao-sub">Você não precisa investir caro para começar a ver resultado</p>
-
-    <div style="background:#111;border:1px solid #2E2E2E;border-radius:10px;padding:20px 24px;text-align:center;">
-      <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(13px,2vw,17px);color:var(--amarelo);">
-        M.A.P.A. = Micro investimento + Ação + Prova + Acesso imediato
-      </p>
+    <div style="background:var(--azul-medio);border:1px solid var(--borda);border-radius:10px;padding:20px 24px;text-align:center;">
+      <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(13px,2vw,17px);color:var(--amarelo);">M.A.P.A. = Micro investimento + Ação + Prova + Acesso imediato</p>
     </div>
-
     <div class="mapa-grid">
-      <div class="mapa-card"><div class="letra">M</div><h3>Micro investimento</h3><p>Mais barato que um lanche — a partir de R$10</p></div>
-      <div class="mapa-card"><div class="letra">A</div><h3>Ação imediata</h3><p>Comprou, já posta hoje mesmo</p></div>
-      <div class="mapa-card"><div class="letra">P</div><h3>Prova rápida</h3><p>Postou hoje, já sente a diferença</p></div>
-      <div class="mapa-card"><div class="letra">A</div><h3>Acesso imediato</h3><p>Sem espera, sem burocracia</p></div>
+      <div class="mapa-card"><div class="mapa-icon"><img src="icon1.webp" alt="M"></div><div class="letra">M</div><h3>Micro investimento</h3><p>Mais barato que um lanche — a partir de R$10</p></div>
+      <div class="mapa-card"><div class="mapa-icon"><img src="icon2.webp" alt="A"></div><div class="letra">A</div><h3>Ação imediata</h3><p>Comprou, já posta hoje mesmo</p></div>
+      <div class="mapa-card"><div class="mapa-icon"><img src="icon3.webp" alt="P"></div><div class="letra">P</div><h3>Prova rápida</h3><p>Postou hoje, já sente a diferença</p></div>
+      <div class="mapa-card"><div class="mapa-icon"><img src="icon4.webp" alt="A"></div><div class="letra">A</div><h3>Acesso imediato</h3><p>Sem espera, sem burocracia</p></div>
     </div>
-
     <div class="text-center mt-32">
-      <p style="color:var(--texto-muted);font-size:15px;max-width:480px;margin:0 auto 24px;">
-        👉 <strong style="color:var(--branco);">Você paga pouco, testa rápido e já começa a ver resultado.</strong> Sem enrolação, sem precisar criar nada, com entrega imediata no seu email e WhatsApp.
-      </p>
+      <p style="color:var(--cinza-texto);font-size:15px;max-width:480px;margin:0 auto 24px;">👉 <strong style="color:var(--branco);">Você paga pouco, testa rápido e já começa a ver resultado.</strong> Sem enrolação, sem precisar criar nada, com entrega imediata no seu email e WhatsApp.</p>
       <a href="#planos" class="btn-cta">VER PLANOS E PREÇOS</a>
     </div>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     VANTAGENS — FIXO | Banner 2 🔄 ALTERAR
-════════════════════════════════════ -->
+<!-- VANTAGENS -->
 <section class="secao bg-escuro">
   <div class="container">
     <h2 class="secao-titulo">Vantagens do <span class="destaque">Nosso Pacote</span></h2>
     <p class="secao-sub">Tudo que você precisa para manter suas redes ativas e atrair clientes todos os dias</p>
-
     <div class="vantagens-grid">
-      <ul class="vantagens-lista">
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Economize horas criando conteúdo</li>
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Publique vídeos profissionais todos os dias</li>
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Atraia mais clientes da sua cidade</li>
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Destaque sua empresa da concorrência</li>
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Conteúdo pronto para usar</li>
-        <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Basta baixar e postar</li>
-      </ul>
-      <!-- 🔄 ALTERAR: Banner 2 do segmento -->
-      <div class="banner-wrap">
-        <img src="banner2_pintor.webp" alt="Exemplo do pacote" loading="lazy">
+      <div class="banner-wrap"><img src="banner_2.webp" alt="Exemplo do pacote" loading="lazy"></div>
+      <div>
+        <ul class="vantagens-lista">
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Economize horas criando conteúdo</li>
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Publique vídeos profissionais todos os dias</li>
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Atraia mais clientes da sua cidade</li>
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Destaque seu lava rápido da concorrência</li>
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Conteúdo pronto para usar</li>
+          <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Basta baixar e postar</li>
+        </ul>
+        <div class="mt-24"><a href="#planos" class="btn-cta" style="max-width:100%;">EU QUERO BOMBAR MINHAS REDES</a></div>
       </div>
-    </div>
-
-    <div class="text-center mt-32">
-      <a href="#planos" class="btn-cta">EU QUERO BOMBAR MINHAS REDES</a>
     </div>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     COMO FUNCIONA — FIXO
-════════════════════════════════════ -->
+<!-- COMO FUNCIONA -->
 <section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo">Como Funciona? <span class="destaque">É Simples e Rápido</span></h2>
@@ -629,242 +354,139 @@ footer a { color: #6B7280; text-decoration: underline; }
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     ÍCONES DO PACOTE — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-escuro" style="padding-top:40px;padding-bottom:40px;">
-  <div class="container">
-    <div class="icones-grid">
-      <img src="icon1.webp" alt="" loading="lazy">
-      <img src="icon2.webp" alt="" loading="lazy">
-      <img src="icon3.webp" alt="" loading="lazy">
-      <img src="icon4.webp" alt="" loading="lazy">
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════
-     BÔNUS — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-card">
+<!-- BÔNUS -->
+<section class="secao bg-escuro">
   <div class="container">
     <h2 class="secao-titulo">🎁 6 Bônus <span class="destaque">Exclusivos</span> Para Quem Comprar Hoje</h2>
     <p class="secao-sub">Ferramentas que normalmente custariam R$366 — hoje você recebe de graça</p>
     <div class="bonus-grid">
-      <img src="bonus_1.webp" alt="Bônus 1 — Painel de Gestão Inteligente" loading="lazy">
-      <img src="bonus_2.webp" alt="Bônus 2 — Método Posts que Atrai Clientes" loading="lazy">
-      <img src="bonus_3.webp" alt="Bônus 3 — Fórmula Instagram que Vende" loading="lazy">
-      <img src="bonus_4.webp" alt="Bônus 4 — Protocolo de Atendimento" loading="lazy">
-      <img src="bonus_5.webp" alt="Bônus 5 — Biblioteca de Respostas WhatsApp" loading="lazy">
-      <img src="bonus_6.webp" alt="Bônus 6 — Sistema de Controle de Clientes" loading="lazy">
+      <img src="bonus_1.webp" alt="Bônus 1" loading="lazy">
+      <img src="bonus_2.webp" alt="Bônus 2" loading="lazy">
+      <img src="bonus_3.webp" alt="Bônus 3" loading="lazy">
+      <img src="bonus_4.webp" alt="Bônus 4" loading="lazy">
+      <img src="bonus_5.webp" alt="Bônus 5" loading="lazy">
+      <img src="bonus_6.webp" alt="Bônus 6" loading="lazy">
     </div>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     DEPOIMENTOS — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-escuro">
+<!-- DEPOIMENTOS -->
+<section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo">Veja o Que Estão <span class="destaque">Falando</span></h2>
     <p class="secao-sub">🔥 Donos de empresas que já usaram o pacote</p>
-
     <div class="depo-grid">
       <img src="depo_1.webp" alt="Depoimento 1" loading="lazy">
       <img src="depo_2.webp" alt="Depoimento 2" loading="lazy">
       <img src="depo_3.webp" alt="Depoimento 3" loading="lazy">
       <img src="depo_4.webp" alt="Depoimento 4" loading="lazy">
     </div>
-
-    <!-- Vídeos depoimento — FIXO (nunca mudam) -->
-    <section class="phone-video-section">
-    <div class="phone-video-grid">
-
-    <div class="phone-card"><div class="phone-frame">
-    <div class="phone-notch"></div>
-    <div class="video-host">
-    <iframe src="https://play.tynk.ai/p/efbdc61e-2318-4715-bcca-4e00c4b338ea" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="tap-center" onclick="ativarVideo(this)"></div>
-    </div></div>
-
-    <div class="phone-card"><div class="phone-frame">
-    <div class="phone-notch"></div>
-    <div class="video-host">
-    <iframe src="https://play.tynk.ai/p/a90b96e8-a62b-4465-ae68-37d4217ff71d" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="tap-center" onclick="ativarVideo(this)"></div>
-    </div></div>
-
-    <div class="phone-card"><div class="phone-frame">
-    <div class="phone-notch"></div>
-    <div class="video-host">
-    <iframe src="https://play.tynk.ai/p/9b03d38d-e921-4ab2-bb96-714bf0ddc717" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="tap-center" onclick="ativarVideo(this)"></div>
-    </div></div>
-
-    </div>
-    </section>
+    <section class="phone-video-section"><div class="phone-video-grid">
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/efbdc61e-2318-4715-bcca-4e00c4b338ea" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/a90b96e8-a62b-4465-ae68-37d4217ff71d" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    <div class="phone-card"><div class="phone-frame"><div class="phone-notch"></div><div class="video-host"><iframe src="https://play.tynk.ai/p/9b03d38d-e921-4ab2-bb96-714bf0ddc717" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="tap-center" onclick="ativarVideo(this)"></div></div></div>
+    </div></section>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     PLANOS / PREÇOS
-     🔄 ALTERAR: links de checkout
-════════════════════════════════════ -->
-<section class="secao bg-card" id="planos">
+<!-- PLANOS -->
+<section class="secao bg-escuro" id="planos">
   <div class="container">
-
     <div class="alerta-promo">
       <p>⚠️ Promoção válida somente hoje — <span id="data-promo"></span>. Depois o preço volta ao normal.</p>
     </div>
     <script>
-      const _dp = new Date();
-      const _mp = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-      const _di = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
-      document.getElementById('data-promo').textContent = _dp.getDate() + ' de ' + _mp[_dp.getMonth()] + ', ' + _di[_dp.getDay()];
+      const _dp=new Date();
+      const _mp=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+      const _di=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+      document.getElementById('data-promo').textContent=_dp.getDate()+' de '+_mp[_dp.getMonth()]+', '+_di[_dp.getDay()];
     </script>
-
     <h2 class="secao-titulo">Escolha o Melhor <span class="destaque">Plano</span> Para Você</h2>
     <p class="secao-sub">Conquiste mais clientes hoje mesmo</p>
-
     <div class="planos-grid">
-
-      <!-- PLANO BÁSICO -->
       <div class="plano">
-        <div class="plano-header">
-          <h3>Plano Básico</h3>
-          <p class="plano-de">De R$67,00</p>
-          <p class="plano-valor">R$10</p>
-          <p class="plano-tipo">Pagamento único</p>
-        </div>
+        <div class="plano-header"><h3>Plano Básico</h3><div class="plano-preco-box"><p class="plano-de">De R$67,00</p><p class="plano-valor">R$10</p><p class="plano-tipo">Pagamento único</p></div></div>
         <ul>
           <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>5 Vídeos Objetos Falantes</li>
           <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10 Posts</li>
           <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>5 Stories</li>
           <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10 Legendas</li>
         </ul>
-        <!-- 🔄 ALTERAR: link checkout básico -->
-        <a href="https://postshair.com/dsobjpintor10/" class="btn-cta">QUERO ESSA OPÇÃO</a>
+        <a href="upsell.html" class="btn-cta" style="max-width:100%;">QUERO ESSA OPÇÃO</a>
       </div>
-
-      <!-- PLANO COMPLETO -->
       <div class="plano destaque">
         <span class="plano-badge">⭐ SUPER OFERTA</span>
-        <div class="super-oferta-wrap">
-          <img src="super_oferta.png" alt="Super Oferta" loading="lazy">
-        </div>
-        <div class="plano-header">
-          <h3>Pacote Completo</h3>
-          <p class="plano-de">Valor total: R$67,00</p>
-          <p class="plano-valor">R$27,90</p>
-          <p class="plano-tipo">Pagamento único — acesso imediato</p>
-        </div>
+        <div class="super-oferta-wrap"><img src="super_oferta.png" alt="Super Oferta" loading="lazy"></div>
+        <div class="plano-header"><h3>Pacote Completo</h3><div class="plano-preco-box"><p class="plano-valor">R$27,90</p><p class="plano-tipo">Pagamento único — acesso imediato</p></div></div>
         <ul>
-          <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎥 +90 Vídeos de Objetos Falantes</li>
-          <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+120 Posts editáveis</li>
+          <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎥 +100 Vídeos de Objetos Falantes</li>
+          <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+60 Posts editáveis</li>
           <li><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Destaques para Bio no Instagram</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 1: Painel de Gestão Inteligente</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 2: Método Posts que Atrai Clientes</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 3: Fórmula Instagram que Vende</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 4: Protocolo de Atendimento</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 5: Biblioteca de Respostas WhatsApp</li>
-          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 6: Sistema de Controle de Clientes</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 1: Painel de Gestão Inteligente</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 2: Método Posts que Atrai Clientes</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 3: Fórmula Instagram que Vende</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 4: Protocolo de Atendimento</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 5: Biblioteca de Respostas WhatsApp</li>
+          <li class="bonus-item"><span class="p-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#0A1628" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>🎁 Bônus 6: Sistema de Controle de Clientes</li>
         </ul>
-        <!-- 🔄 ALTERAR: link checkout completo -->
-        <a href="https://app.mivvo.io/checkout/famt8wzmpecxofa" class="btn-cta verde">SIM! QUERO ESSA SUPER OFERTA!</a>
+        <a href="https://app.mivvo.io/checkout/7tb84w4mp18oah4" class="btn-cta" style="max-width:100%;">SIM! QUERO ESSA SUPER OFERTA!</a>
         <p class="plano-rodape">Você não vai encontrar esse preço depois</p>
       </div>
-
     </div>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     ENTREGA — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-escuro">
+<!-- ENTREGA -->
+<section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo" style="margin-bottom:32px;">Como Você <span class="destaque">Recebe</span>?</h2>
     <div class="entrega-box">
-      <div class="entrega-icones">
-        <div class="entrega-icone">📧</div>
-        <div class="entrega-icone">💬</div>
-      </div>
-      <div>
-        <h3>Email + WhatsApp</h3>
-        <p>Assim que o pagamento for confirmado, enviamos tudo direto para o seu email e WhatsApp. Acesso imediato, sem espera.</p>
-      </div>
+      <div class="entrega-icones"><div class="entrega-icone">📧</div><div class="entrega-icone">💬</div></div>
+      <div><h3>Email + WhatsApp</h3><p>Assim que o pagamento for confirmado, enviamos tudo direto para o seu email e WhatsApp. Acesso imediato, sem espera.</p></div>
     </div>
   </div>
 </section>
 
-
-<!-- ════════════════════════════════════
-     GARANTIA — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-card">
+<!-- GARANTIA -->
+<section class="secao bg-escuro">
   <div class="container">
     <div class="garantia-box">
       <img src="Garantia.webp" alt="Garantia de 7 dias" loading="lazy">
       <h3>Risco Zero — Garantia de 7 Dias</h3>
       <p>Confiamos tanto no pacote que você tem 7 dias de garantia incondicional. Não gostou por qualquer motivo? Basta enviar um email e devolvemos 100% do seu dinheiro. Sem perguntas.</p>
     </div>
-    <div class="text-center mt-32">
-      <a href="#planos" class="btn-cta">EU PRECISO COMPRAR AGORA MESMO!</a>
-    </div>
+    <div class="text-center mt-32"><a href="#planos" class="btn-cta">EU PRECISO COMPRAR AGORA MESMO!</a></div>
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="secao bg-card">
+  <div class="container">
+    <h2 class="secao-titulo">Perguntas <span class="destaque">Frequentes</span></h2>
+    <p class="secao-sub">Tire suas dúvidas antes de garantir o seu pacote</p>
+    <div class="faq-lista">
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Preciso saber editar vídeo para usar?<span class="faq-icone">+</span></button><div class="faq-resposta">Não! Os vídeos já chegam prontos. Basta baixar e postar direto no Instagram, TikTok, Facebook ou WhatsApp. Zero edição necessária.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Funciona para quem nunca usou redes sociais?<span class="faq-icone">+</span></button><div class="faq-resposta">Sim! O pacote foi criado justamente para quem não tem experiência em marketing digital. Todo o conteúdo é simples — você baixa, abre o aplicativo e posta.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Quanto tempo leva para receber o pacote?<span class="faq-icone">+</span></button><div class="faq-resposta">O acesso é imediato! Assim que o pagamento for confirmado, enviamos tudo direto para o seu email e WhatsApp. Em menos de 5 minutos você já pode começar a postar.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Os vídeos funcionam para qualquer cidade?<span class="faq-icone">+</span></button><div class="faq-resposta">Sim! Os objetos falantes não citam localização, então funcionam para qualquer cidade do Brasil. O algoritmo das redes entrega para pessoas da sua região automaticamente.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Posso usar no TikTok, Instagram e WhatsApp?<span class="faq-icone">+</span></button><div class="faq-resposta">Sim! Todo o conteúdo está no formato ideal para Instagram Reels, TikTok, Facebook e WhatsApp Status. Um pacote para todas as suas redes.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">E se eu não gostar? Tem garantia?<span class="faq-icone">+</span></button><div class="faq-resposta">Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, basta enviar um email e devolvemos 100% do seu dinheiro. Sem burocracia, sem perguntas.</div></div>
+      <div class="faq-item"><button class="faq-pergunta" onclick="toggleFaq(this)">Qual a diferença entre o Plano Básico e o Pacote Completo?<span class="faq-icone">+</span></button><div class="faq-resposta">O Plano Básico inclui 5 vídeos, 10 posts, 5 stories e 10 legendas — ideal para testar. O Pacote Completo tem +100 vídeos, +60 posts e todos os 6 bônus exclusivos, que sozinhos valeriam R$366.</div></div>
+    </div>
+    <div class="text-center mt-32"><a href="#planos" class="btn-cta">👉 QUERO GARANTIR MEU PACOTE AGORA</a></div>
+  </div>
+</section>
 
-<!-- ════════════════════════════════════
-     RODAPÉ — FIXO
-════════════════════════════════════ -->
+<!-- RODAPÉ -->
 <footer>
-  <p style="margin-bottom:8px;">
-    <a href="https://trafego6em7.com/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
-    &nbsp;|&nbsp;
-    <a href="https://trafego6em7.com/termos-de-uso/" target="_blank" rel="noopener">Termos de Uso</a>
-  </p>
+  <p style="margin-bottom:8px;"><a href="https://trafego6em7.com/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a> &nbsp;|&nbsp; <a href="https://trafego6em7.com/termos-de-uso/" target="_blank" rel="noopener">Termos de Uso</a></p>
   <p>© 2026 — Todos os direitos reservados.</p>
 </footer>
 
-
-<!-- ════════════════════════════════════
-     CTA FIXO MOBILE
-     🔄 ALTERAR: link checkout completo
-════════════════════════════════════ -->
-<div class="cta-fixo">
-  <!-- 🔄 ALTERAR: link checkout completo -->
-  <a href="https://app.mivvo.io/checkout/famt8wzmpecxofa" class="btn-cta verde" style="max-width:100%;">🔥 GARANTIR MINHA OFERTA — R$27,90</a>
-</div>
-
-
-<!-- ════════════════════════════════════
-     SCRIPTS — FIXO
-════════════════════════════════════ -->
 <script>
-function ativarVideo(el){
-  const frame = el.closest('.phone-frame');
-  const iframe = frame.querySelector('iframe');
-  iframe.style.pointerEvents = 'auto';
-  el.style.display = 'none';
-}
-window.onload = () => {
-  document.querySelectorAll("a").forEach(link => {
-    if (link.href && link.href.includes("kirvano")) {
-      let params = document.location.search.replace("?","");
-      link.href = link.href + (link.href.indexOf("?") > 0 ? "&" : "?") + params;
-    }
-  });
-};
+function ativarVideo(el){const frame=el.closest('.phone-frame');const iframe=frame.querySelector('iframe');iframe.style.pointerEvents='auto';el.style.display='none';}
+function toggleFaq(btn){const item=btn.closest('.faq-item');const aberto=item.classList.contains('aberto');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('aberto'));if(!aberto)item.classList.add('aberto');}
+window.onload=()=>{document.querySelectorAll("a").forEach(link=>{if(link.href&&link.href.includes("kirvano")){let params=document.location.search.replace("?","");link.href=link.href+(link.href.indexOf("?")>0?"&":"?")+params;}});};
 </script>
-
 </body>
 </html>
